@@ -105,39 +105,3 @@ $('ul.tabs li').click(function(){var $this=$(this);var $theTab=$(this).attr('id'
 
 
 
-function setupMenu(btnId, navId) {
-  var btn = document.getElementById(btnId);
-  var nav = document.getElementById(navId);
-
-  btn.addEventListener('click', () => {
-    if (!btn.classList.contains("is-open")) {
-      btn.classList.add("is-open");
-      nav.classList.add("is-open");
-    } else {
-      btn.classList.remove("is-open");
-      nav.classList.remove("is-open");
-    }
-  });
-}
-
-/* available Menu 1*/
-setupMenu("btn-dropdown1", "nav-dropdown1");
-
-/* available Menu 2*/
-setupMenu("btn-dropdown2", "nav-dropdown2");
-
-/* available Menu 3*/
-setupMenu("btn-dropdown3", "nav-dropdown3");
-
-/* available Menu 4*/
-setupMenu("btn-dropdown4", "nav-dropdown4");
-
-/* available Menu 5*/
-setupMenu("btn-dropdown5", "nav-dropdown5");
-
-/* available Menu 6*/
-setupMenu("btn-dropdown6", "nav-dropdown6");
-
-function goBack() {
-  window.history.back();
-}
